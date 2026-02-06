@@ -1,243 +1,465 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Kanishka Joshi | Frontend Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
 </head>
+
 <body>
-    <header>
-        <nav>
-            <div class="logo">
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="#home" class="logo">
                 <div class="logo-circle">KJ</div>
-                <span class="logo-text">Kanishka Joshi</span>
-            </div>
-            <ul class="nav-links">
+                <div class="logo-text">Kanishka Joshi</div>
+            </a>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="#project">Project</a></li>
-                <li><a href="#certification">Certification</a></li>
-                <li><a href="#conference">Conference</a></li>
-                <li><a href="#calendar">Calendar</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#blog">Blog</a></li>
             </ul>
-        </nav>
-    </header> 
+        </div>
+    </header>
 
-    <section id="home" class="hero">
+    <!-- Home Section -->
+    <section id="home">
         <div class="container">
-            <div class="photo-section">
-                <img src="kannu.jpeg" alt="Profile Photo" class="profile-photo">
-            </div>
-            <div class="content-section">
-                <p>Hi I'am Web Developer & Designer </p>
-                <h1>Kanishka Joshi</h1>
-                <p>Cloud Security Red Teamer & Product Security Engineer II at HighRadius. I specialize in multi-cloud security, red teaming, and building open-source tools for cloud visibility and attack simulation.
-                    Creator of CloudLens and co-creator of SCAGoat.
-                    Speaker at BlackHat, AppSec Village, and core team at Seasides.</p>
-                <div class="content-buttons">
-                    <a href="#" class="btn">Download CV</a>
-                    <a href="#contact" class="btn-outline">Contact</a>
-                </div>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
+            <div class="home-content">
+                <div class="tagline">Frontend Developer</div>
+                <h1>Hi, I'm <span>Kanishka Joshi</span></h1>
+                <h1>Building Beautiful & Functional Web Experiences</h1>
+                <p>A passionate frontend developer specializing in creating responsive, user-friendly websites and
+                    applications. I love turning creative ideas into reality with clean code and modern technologies.
+                </p>
+                <div class="home-btns">
+                    <a href="#projects" class="btn">View My Projects</a>
+                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section id="experience" class="experience-section">
-        <h2 class="section-title">Experience</h2>
-        <div class="experience-container">
-            <div class="experience-card">
-                <h3>Product Security Engineer II</h3>
-                <h4>HighRadius</h4>
-                <p class="date">2022 - Present</p>
-                <ul>
-                    <li>Specializing in multi-cloud security and red teaming</li>
-                    <li>Building open-source tools for cloud visibility</li>
-                    <li>Leading security initiatives and attack simulation</li>
-                    
-
-                </ul>
+            <!-- Photo in Home Section -->
+            <div class="home-photo">
+                <img src="kannu.jpeg" alt="Kanishka Joshi">
             </div>
         </div>
+        <div class="home-bg-pattern"></div>
     </section>
 
-    <section id="project" class="projects-section">
-        <h2 class="section-title">Projects</h2>
-        <div class="projects-container">
-            <div class="project-card">
-                <h3>CloudLens</h3>
-                <p>Creator of CloudLens - A tool for cloud visibility and security assessment</p>
-                <a href="#" class="github-link">View on Github</a>
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+                <p>Get to know more about me and my journey as a frontend developer</p>
             </div>
-            <div class="project-card">
-                <h3>SCAGoat</h3>
-                <p>Co-creator of SCAGoat - Security testing and assessment tool</p>
-                <a href="#" class="github-link">View on Github</a>
-            </div>
-        </div>
-    </section>
 
-    <section id="skills" class="skills-section">
-        <h2 class="section-title">Skills</h2>
-        <div class="skills-container">
-            <div class="skill-card">
-                <i class="fas fa-shield-alt"></i>
-                <h3>Security Testing</h3>
-                <ul class="skill-list">
-                    <li>Penetration Testing</li>
-                    <li>Vulnerability Assessment</li>
-                    <li>Red Team Operations</li>
-                    <li>Security Auditing</li>
-                </ul>
-            </div>
-            <div class="skill-card">
-                <i class="fas fa-cloud"></i>
-                <h3>Cloud Security</h3>
-                <ul class="skill-list">
-                    <li>AWS Security</li>
-                    <li>Azure Security</li>
-                    <li>GCP Security</li>
-                    <li>Cloud Architecture</li>
-                </ul>
-            </div>
-            <div class="skill-card">
-                <i class="fas fa-tools"></i>
-                <h3>Tool Technologies</h3>
-                <ul class="skill-list">
-                    <li>Security Tools Development</li>
-                    <li>Automation Scripts</li>
-                    <li>Custom Security Solutions</li>
-                    <li>Open Source Tools</li>
-                </ul>
-            </div>
-            <div class="skill-card">
-                <i class="fas fa-star"></i>
-                <h3>Core Competencies</h3>
-                <ul class="skill-list">
-                    <li>Product Security</li>
-                    <li>Security Architecture</li>
-                    <li>Threat Modeling</li>
-                    <li>Security Research</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Frontend Developer | UI/UX Enthusiast</h3>
+                    <p>I'm Kanishka Joshi, a passionate frontend developer with a focus on creating beautiful,
+                        responsive, and user-friendly web experiences. I enjoy the process of transforming ideas into
+                        reality using code.</p>
+                    <p>As a fresher, I bring fresh perspectives, enthusiasm, and up-to-date knowledge of modern web
+                        technologies. I'm constantly learning and improving my skills to build better web experiences.
+                    </p>
+                    <p>When I'm not coding, you can find me exploring new design trends, contributing to open-source
+                        projects, or learning about the latest frontend frameworks.</p>
 
-    <section id="certification" class="certifications-section">
-        <h2 class="section-title">Certifications</h2>
-        <div class="certifications-container">
-            <div class="certification-card">
-                <i class="fas fa-certificate"></i>
-                <h3>AWS Certified Security Specialist</h3>
-                <p>Amazon Web Services</p>
-            </div>
-            <div class="certification-card">
-                <i class="fas fa-certificate"></i>
-                <h3>Certified Ethical Hacker</h3>
-                <p>EC-Council</p>
-            </div>
-            <div class="certification-card">
-                <i class="fas fa-certificate"></i>
-                <h3>Azure Security Engineer</h3>
-                <p>Microsoft</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="conference" class="conference-section">
-        <h2 class="section-title">Conferences & Speaking</h2>
-        <div class="conference-container">
-            <div class="conference-card">
-                <h3>BlackHat</h3>
-                <p>Speaker on Cloud Security and Red Teaming</p>
-                <span class="date">2023</span>
-            </div>
-            <div class="conference-card">
-                <h3>AppSec Village</h3>
-                <p>Speaker on Security Tools Development</p>
-                <span class="date">2023</span>
-            </div>
-            <div class="conference-card">
-                <h3>Seasides</h3>
-                <p>Core Team Member</p>
-                <span class="date">2023</span>
-            </div>
-        </div>
-    </section>
-
-    <section id="calendar" class="calendar-section">
-        <h2 class="section-title">Upcoming Events</h2>
-        <div class="calendar-container">
-            <div class="event-card">
-                <div class="event-date">
-                    <span class="month">MAR</span>
-                    <span class="day">15</span>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-text">Projects Built</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-text">Technologies Learned</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-text">Passionate</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="event-details">
-                    <h3>Cloud Security Workshop</h3>
-                    <p>Virtual Event</p>
-                </div>
-            </div>
-            <div class="event-card">
-                <div class="event-date">
-                    <span class="month">APR</span>
-                    <span class="day">20</span>
-                </div>
-                <div class="event-details">
-                    <h3>Red Team Summit</h3>
-                    <p>In-Person Conference</p>
+
+                <!-- Photo in About Section -->
+                <div class="about-image">
+                    <div class="about-img-container">
+                        <img src="kannu.jpeg" alt="Kanishka Joshi - About">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Skills</h2>
+                <p>Technologies and tools I work with</p>
+            </div>
+
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Frontend Technologies</h3>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">HTML5</span>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="95"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">CSS3 / SASS</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">JavaScript (ES6+)</span>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="88"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">React.js</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Tools & Others</h3>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Git & GitHub</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Responsive Design</span>
+                            <span class="skill-percent">92%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="92"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">UI/UX Principles</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Figma / Adobe XD</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Projects</h2>
+                <p>Some of my recent work and personal projects</p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img">E-commerce Website</div>
+                    <div class="project-content">
+                        <h3>Modern E-commerce UI</h3>
+                        <p>A fully responsive e-commerce website frontend with product filtering, cart functionality,
+                            and checkout process.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Redux</span>
+                            <span class="project-tag">Styled Components</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">Weather Dashboard</div>
+                    <div class="project-content">
+                        <h3>Weather App</h3>
+                        <p>A weather application with real-time data, 5-day forecast, and location-based weather
+                            information.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">API Integration</span>
+                            <span class="project-tag">CSS Grid</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">Task Manager</div>
+                    <div class="project-content">
+                        <h3>Task Management App</h3>
+                        <p>A drag-and-drop task management application with categories, due dates, and progress
+                            tracking.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Vue.js</span>
+                            <span class="project-tag">LocalStorage</span>
+                            <span class="project-tag">CSS Animations</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Experience</h2>
+                <p>As a fresher, here's my journey so far</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023 - Present</span>
+                        <h3>Frontend Developer Intern</h3>
+                        <p>TechSolutions Pvt. Ltd.</p>
+                        <p>Working on building responsive user interfaces, collaborating with designers, and
+                            implementing frontend features for client projects.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2022 - 2023</span>
+                        <h3>Freelance Web Developer</h3>
+                        <p>Self-Employed</p>
+                        <p>Developed websites for small businesses and personal projects, focusing on responsive design
+                            and user experience.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2021 - 2022</span>
+                        <h3>Web Development Bootcamp</h3>
+                        <p>Code Academy</p>
+                        <p>Completed intensive training in modern web development technologies including HTML, CSS,
+                            JavaScript, and React.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Education</h2>
+                <p>My academic background and qualifications</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2019 - 2023</span>
+                        <h3>Bachelor of Computer Science</h3>
+                        <p>University of Technology</p>
+                        <p>Graduated with distinction. Specialized in web technologies and software development.
+                            Completed multiple frontend development projects during studies.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2022</span>
+                        <h3>Frontend Development Certification</h3>
+                        <p>Online Platform</p>
+                        <p>Completed advanced certification in modern frontend development focusing on React, responsive
+                            design, and performance optimization.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2021</span>
+                        <h3>UI/UX Design Course</h3>
+                        <p>Design Institute</p>
+                        <p>Learned principles of user interface design, user experience, and design thinking for
+                            creating intuitive digital products.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
     <!-- Contact Section -->
-    <section id="contact" class="section">
+    <section id="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-grid">
-                <div class="contact-card">
-                    <i class="fas fa-envelope"></i>
-                    <h3>Email</h3>
-                    <p>your.email@example.com</p>
-                    <a href="mailto:your.email@example.com" class="contact-link">Send Email</a>
-                </div>
-                <div class="contact-card">
-                    <i class="fas fa-phone"></i>
-                    <h3>Phone</h3>
-                    <p>+1 234 567 890</p>
-                    <a href="tel:+1234567890" class="contact-link">Call Now</a>
-                </div>
-                <div class="contact-card">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <h3>Location</h3>
-                    <p>Your City, Country</p>
-                    <a href="#" class="contact-link">View on Map</a>
-                </div>
+            <div class="section-title">
+                <h2>Contact Me</h2>
+                <p>Feel free to get in touch with me</p>
             </div>
-            <div class="social-links">
-                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm currently looking for new opportunities as a frontend developer. Whether you have a project
+                        to discuss or just want to say hi, I'll get back to you as soon as possible!</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>kanishkajoshi4112022@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <p>+91 7568004535</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Location</h4>
+                                <p>Alwar, India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <!-- Simple contact form without the dedicated form section -->
+                    <div style="background: var(--dark-light); padding: 30px; border-radius: var(--border-radius);">
+                        <h3
+                            style="margin-bottom: 20px; background: var(--gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                            Quick Message</h3>
+                        <div style="margin-bottom: 20px;">
+                            <input type="text" placeholder="Your Name"
+                                style="width: 100%; padding: 12px 15px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 8px; color: white; font-family: 'Poppins', sans-serif;">
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <input type="email" placeholder="Your Email"
+                                style="width: 100%; padding: 12px 15px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 8px; color: white; font-family: 'Poppins', sans-serif;">
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <textarea placeholder="Your Message" rows="4"
+                                style="width: 100%; padding: 12px 15px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 8px; color: white; font-family: 'Poppins', sans-serif;"></textarea>
+                        </div>
+                        <button class="btn" style="width: 100%;">Send Message</button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Your Name. All rights reserved.</p>
+            <div class="footer-content">
+                <a href="#home" class="footer-logo">
+                    <div class="logo-circle">KJ</div>
+                </a>
+
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-codepen"></i>
+                    </a>
+                </div>
+
+                <div class="copyright">
+                    <p>&copy; 2023 Kanishka Joshi. All Rights Reserved.</p>
+                </div>
+            </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
-</body>
-</html>
 
+
+    <script src="main.js"></script>
+
+
+</body>
+
+</html>
